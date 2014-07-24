@@ -1,3 +1,13 @@
+### Files
+`cachematrix.R` is the actual solution
+`testsolve.R` is a test program, demonstrates use of the cache. The program
+  creates a 1000x1000 matrix, uses makeCacheMatrix to create the "cached"
+  version and then call cacheSolve twice, measuring the CPU time. The second
+  call uses negligible CPU showing, demonstrating that the cached result 
+  has been used. Finally the original matrix is modified and cacheSolve
+  called again, to demonstrate, that the cached inverse has been invalidated
+  and recalculated. To run the test simply `source("testsolve.R")`
+
 ### Introduction
 
 This second programming assignment will require you to write an R
